@@ -9,5 +9,6 @@ public class Main {
         System.out.println("heSoMacDinh = "+Main.heSoMacDinh);
         System.out.println("Mua: "+season.muaDong);
         //alo;
+        //bloe
     }
 }
