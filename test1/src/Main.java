@@ -8,5 +8,6 @@ public class Main {
         //Main.heSoMacDinh = 15;
         System.out.println("heSoMacDinh = "+Main.heSoMacDinh);
         System.out.println("Mua: "+season.muaDong);
+        //alo;
     }
 }
