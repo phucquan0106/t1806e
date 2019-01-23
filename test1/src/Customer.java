@@ -3,4 +3,7 @@ public class Customer {
     String customerName;
     int age;
     String address;
+    int budget;
+
+
 }
