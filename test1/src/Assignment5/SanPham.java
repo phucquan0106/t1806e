@@ -1,31 +1,27 @@
+package Assignment5;
+
 public class SanPham {
-    int Id;
-    String ten;
-    int gia;
-    int soLuong;
+    private int id;
+    private String ten;
+    private int gia;
+    private int soLuong;
 
     public SanPham() {
     }
 
     public SanPham(int id, String ten, int gia, int soLuong) {
-        Id = id;
+        this.id = id;
         this.ten = ten;
         this.gia = gia;
         this.soLuong = soLuong;
     }
 
-    public int kiemTraSoLuong(){
-        return this.soLuong;
-    }
-
-
-
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getTen() {
