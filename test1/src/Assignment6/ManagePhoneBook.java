@@ -31,7 +31,7 @@ public class ManagePhoneBook {
                     phoneBook.insertPhone(name,phone);
 
                     System.out.println("Enter number 1 to go back Menu or any other to EXIT");
-                    exit = scanner.nextLine();
+                    exit = scanner.nextLine().trim();
                     if(exit.equals("1")){
                         continue;
                     }else{
@@ -43,7 +43,7 @@ public class ManagePhoneBook {
                     phoneBook.removePhone(name);
 
                     System.out.println("Enter number 1 to go back Menu or any other to EXIT");
-                    exit = scanner.nextLine();
+                    exit = scanner.nextLine().trim();
                     if(exit.equals("1")){
                         continue;
                     }else{
@@ -58,7 +58,7 @@ public class ManagePhoneBook {
                     phoneBook.updatePhone(name,phone);
 
                     System.out.println("Enter number 1 to go back Menu or any other to EXIT");
-                    exit = scanner.nextLine();
+                    exit = scanner.nextLine().trim();
                     if(exit.equals("1")){
                         continue;
                     }else{
@@ -71,7 +71,7 @@ public class ManagePhoneBook {
                     phoneBook.searchPhone(name);
 
                     System.out.println("Enter number 1 to go back Menu or any other to EXIT");
-                    exit = scanner.nextLine();
+                    exit = scanner.nextLine().trim();
                     if(exit.equals("1")){
                         continue;
                     }else{
@@ -81,7 +81,7 @@ public class ManagePhoneBook {
                     phoneBook.sort();
 
                     System.out.println("Enter number 1 to go back Menu or any other to EXIT");
-                    exit = scanner.nextLine();
+                    exit = scanner.nextLine().trim();
                     if(exit.equals("1")){
                         continue;
                     }else{
