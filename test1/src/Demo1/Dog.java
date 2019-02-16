@@ -1,14 +1,26 @@
 package Demo1;
+public class Dog extends Animal implements LiveInterface,AnimalInterface{
 
-public class Dog extends Animal {
     public String color;
-    public String type;
+    public String type ="cho";
 
-    public void chay(int x) {
-        System.out.println("chay " + x + "km");
+    @Override
+    public void hittho() {
+
     }
 
+    @Override
     public void an() {
-        System.out.println("An 2");
+
+    }
+
+    public void sua(){
+        System.out.println("Sủa..");
+    }
+
+
+
+    public void chay(int x){
+        System.out.println("chay "+x+" km..");
     }
 }

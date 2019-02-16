@@ -1,13 +1,31 @@
 package Demo1;
 
-public class Animal {
-    public String type;
+public class Animal extends Live {
+
+    public class Ani{
+        public void sayHello(){
+            System.out.println("Ani say hello..");
+        }
+    }
+
+    public static class Anima{
+        public void sayHello(){
+            System.out.println("Anima say hello..");
+        }
+    }
+
+    public String type = "Animal";
     public int age;
 
+    @Override
+    public void demo() {
+
+    }
+
+
+
     public void chay(){
-        System.out.println("Chay 1");
+        System.out.println("Chạy..");
     }
-    public  void an(){
-        System.out.println("An 1");
-    }
+
 }
