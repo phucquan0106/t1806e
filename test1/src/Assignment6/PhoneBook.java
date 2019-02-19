@@ -26,14 +26,25 @@ public class PhoneBook extends Phone {
             System.out.println("Name: "+arrContact.get(i).getName() + " -- Phone: "+ arrContact.get(i).getPhone());
         }
     }
+    public boolean existPhone(String oldNumber, String newNumber){
+        String[] arrNumber = oldNumber.split(":");
+        for(String temp:arrNumber){
+            if(temp.equalsIgnoreCase(newNumber)){
+                return true;
+            }
+        }
+        return  false;
+    }
 
     @Override
     void insertPhone(String name, String phone) {
         int temp = 0;
         for (int i = 0;i <this.PhoneList.size();i++){
             if(this.PhoneList.get(i).getName().equalsIgnoreCase(name)){
-                this.PhoneList.get(i).setPhone(this.PhoneList.get(i).getPhone()+":"+phone);
                 temp++;
+                if(!existPhone(this.PhoneList.get(i).getPhone(),phone)){
+                    this.PhoneList.get(i).setPhone(this.PhoneList.get(i).getPhone()+":"+phone);
+                }
                 break;
             }
         }
