@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ManageStudent {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String s;
+        String choice;
         ArrayList<Student> arrStudent = new ArrayList<Student>();
         while (true){
             System.out.println("MANAGE STUDENT: ");
@@ -19,10 +19,10 @@ public class ManageStudent {
             System.out.println("0. Exit.");
             System.out.println("Your choice: ");
 
-            s = scanner.nextLine().trim();
+            choice = scanner.nextLine().trim();
             StudentList studentList = new StudentList(arrStudent);
 
-            switch (s){
+            switch (choice){
                 case ("1"): //=========Add Student =============
                     studentList.addStudent();
                     break;

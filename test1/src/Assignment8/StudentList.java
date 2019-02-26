@@ -23,11 +23,11 @@ public class StudentList implements IStudent {
     @Override
     public void addStudent() {
         Scanner scanner = new Scanner(System.in);
-        int id,age;
-        String name,address;
+        int id, age;
+        String name, address;
         float gpa;
         System.out.println("Input new Student: ");
-        id = this.maxIndex()+1;
+        id = this.maxIndex() + 1;
         System.out.println("Name: ");
         name = scanner.nextLine().trim();
         System.out.println("Age: ");
@@ -38,54 +38,54 @@ public class StudentList implements IStudent {
         System.out.println("GPA: ");
         gpa = scanner.nextFloat();
         scanner.nextLine();
-        Student student = new Student(id,name,age,address,gpa);
+        Student student = new Student(id, name, age, address, gpa);
         this.arrStudent.add(student);
     }
 
     @Override
     public void editStudent() {
         Scanner scanner = new Scanner(System.in);
-        int id,age;
+        int id, age;
         int temp = 0;
-        String name,address;
+        String name, address;
         float gpa;
         System.out.println("Edit Student: ");
         System.out.println("Input ID of Student to edit: ");
         id = scanner.nextInt();
         scanner.nextLine();
-        for(Student std:this.arrStudent){
-            if(std.getId() == id){
+        for (Student std : this.arrStudent) {
+            if (std.getId() == id) {
                 temp++;
                 //Enter new Name. Just Enter if no change
-                System.out.println("Current Name: "+std.getName()+ ". Enter new Name or just Enter if no change: ");
+                System.out.println("Current Name: " + std.getName() + ". Enter new Name or just Enter if no change: ");
                 name = scanner.nextLine().trim();
-                if(!name.equals("")){
+                if (!name.equals("")) {
                     std.setName(name);
                 }
                 //Enter new Age. Just Enter if no change
-                System.out.println("Current Age: "+std.getAge()+ ". Enter new Age or just Enter value 0 if no change: ");
+                System.out.println("Current Age: " + std.getAge() + ". Enter new Age or just Enter value 0 if no change: ");
                 age = scanner.nextInt();
                 scanner.nextLine();
-                if(age != 0 ){
+                if (age != 0) {
                     std.setAge(age);
                 }
                 //Enter new Address. Just Enter if no change
-                System.out.println("Current Address: "+std.getAddress()+ ". Enter new Address or just Enter if no change: ");
+                System.out.println("Current Address: " + std.getAddress() + ". Enter new Address or just Enter if no change: ");
                 address = scanner.nextLine().trim();
-                if(!address.equals("")){
+                if (!address.equals("")) {
                     std.setAddress(address);
                 }
                 //Enter new Gpa. Just Enter if no change
-                System.out.println("Current Gpa: "+std.getGpa()+ ". Enter new Gpa or just Enter value 0 if no change: ");
+                System.out.println("Current Gpa: " + std.getGpa() + ". Enter new Gpa or just Enter value 0 if no change: ");
                 gpa = scanner.nextFloat();
                 scanner.nextLine();
-                if(gpa != 0){
+                if (gpa != 0) {
                     std.setGpa(gpa);
                 }
                 break;
             }
         }
-        if(temp ==0 ){//Student ID not found
+        if (temp == 0) {//Student ID not found
             System.out.println("Student ID not found!");
         }
     }
@@ -99,15 +99,15 @@ public class StudentList implements IStudent {
         System.out.println("Input ID of Student to delete: ");
         id = scanner.nextInt();
         scanner.nextLine();
-        for(Student std:this.arrStudent){
-            if(std.getId() == id){
+        for (Student std : this.arrStudent) {
+            if (std.getId() == id) {
                 temp++;
                 Student tempStudent = std;
                 arrStudent.remove(tempStudent);
                 break;
             }
         }
-        if(temp ==0 ){//Student ID not found
+        if (temp == 0) {//Student ID not found
             System.out.println("Student ID not found!");
         }
     }
@@ -118,7 +118,7 @@ public class StudentList implements IStudent {
         Collections.sort(this.arrStudent, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
-                return (int)(o1.getGpa()-o2.getGpa());
+                return (int) (o1.getGpa() - o2.getGpa());
             }
         });
         this.showStudent();
@@ -140,16 +140,16 @@ public class StudentList implements IStudent {
     public void showStudent() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Student List: ");
-        for(Student std: arrStudent){
-            System.out.print("Id:"+std.getId()+"; Name:"+std.getName()+"; Age:"+std.getAge()+"; Address:"+std.getAddress()+"; GPA:"+std.getGpa()+"\n");
+        for (Student std : arrStudent) {
+            System.out.print("Id:" + std.getId() + "; Name:" + std.getName() + "; Age:" + std.getAge() + "; Address:" + std.getAddress() + "; GPA:" + std.getGpa() + "\n");
         }
     }
 
     @Override
     public int maxIndex() {
         int temp = 0;
-        for(Student std:this.arrStudent){
-            if(std.getId() > temp){
+        for (Student std : this.arrStudent) {
+            if (std.getId() > temp) {
                 temp = std.getId();
             }
         }
