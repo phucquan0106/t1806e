@@ -12,6 +12,7 @@ public class Connector {
     public Statement statement;
 
     public Connector(){
+
         try {
             Class.forName(Connector.JDBC_DRIVER);
             Connection connection = DriverManager.getConnection(Connector.JDBC_URL,Connector.JDBC_USER,Connector.JDBC_PASS);

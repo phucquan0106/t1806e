@@ -10,6 +10,7 @@ public class Connector {
 
     public Connection conn;
     public Statement statement;
+    private static Connector connector;
 
     public Connector(){
         try{
@@ -22,6 +23,13 @@ public class Connector {
         }catch (SQLException e){
 
         }
+    }
+
+    public static Connector getInstance(){
+        if(connector == null){
+            connector = new Connector();
+        }
+        return connector;
     }
 
 }

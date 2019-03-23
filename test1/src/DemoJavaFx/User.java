@@ -5,12 +5,22 @@ public class User {
     public String username;
     public String email;
     public Integer status;
+    public String password;
 
-    public User(Integer id, String username, String email, Integer status) {
+    public User(Integer id, String username, String email, Integer status,String password) {
         this.id = id;
         this.username = username;
         this.email = email;
         this.status = status;
+        this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Integer getId() {
