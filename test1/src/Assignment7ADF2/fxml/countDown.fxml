@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment7ADF2.Controller.ctrlCountDown">
+   <children>
+      <Text fx:id="txtNumber" layoutX="259.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Button layoutX="94.0" layoutY="271.0" mnemonicParsing="false" onAction="#start" text="START" />
+      <Button layoutX="248.0" layoutY="271.0" mnemonicParsing="false" onAction="#pause" text="PAUSE" />
+      <Button layoutX="395.0" layoutY="271.0" mnemonicParsing="false" onAction="#exit" prefHeight="51.0" prefWidth="100.0" text="EXIT" />
+   </children>
+</Pane>
