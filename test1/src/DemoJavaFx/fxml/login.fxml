@@ -13,10 +13,11 @@
       <Label layoutX="90.0" layoutY="246.0" prefHeight="56.0" prefWidth="189.0" text="Pass word:" />
       <PasswordField fx:id="txtPassword" layoutX="90.0" layoutY="328.0" prefHeight="51.0" prefWidth="832.0" promptText="password" />
       <Button layoutX="90.0" layoutY="429.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="51.0" prefWidth="143.0" text="LOGIN" />
-      <Button layoutX="779.0" layoutY="429.0" mnemonicParsing="false" onAction="#moveToRegister" prefHeight="51.0" prefWidth="143.0" text="Register" />
+      <Button layoutX="844.0" layoutY="429.0" mnemonicParsing="false" onAction="#moveToRegister" prefHeight="51.0" prefWidth="143.0" text="Register" />
       <Button layoutX="273.0" layoutY="429.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="51.0" prefWidth="143.0" text="Update" />
       <Button layoutX="468.0" layoutY="429.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="51.0" prefWidth="143.0" text="Delete" />
       <TextField fx:id="txtId" layoutX="815.0" layoutY="35.0" prefHeight="51.0" prefWidth="166.0" promptText="idid" />
       <Text layoutX="753.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id:" />
+      <Button layoutX="638.0" layoutY="429.0" mnemonicParsing="false" onAction="#getPhoneById" text="Search Phone" />
    </children>
 </Pane>

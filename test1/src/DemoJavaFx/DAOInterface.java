@@ -10,5 +10,6 @@ public interface DAOInterface<T> {
     ArrayList<T> list();
     int update(int id,T t) throws SQLException;
     int delete(int id) throws SQLException;
+    ArrayList<String> getPhoneById(int id) throws  SQLException;
 
 }

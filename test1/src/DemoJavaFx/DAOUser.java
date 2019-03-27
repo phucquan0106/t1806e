@@ -80,4 +80,18 @@ public class DAOUser implements DAOInterface<User> {
         String sql = "DELETE FROM user WHERE id = "+ id;
         return connector.statement.executeUpdate(sql);
     }
+
+    @Override
+    public ArrayList<String> getPhoneById(int id) throws SQLException {
+        String sql = "SELECT telephone FROM phonebook t INNER JOIN user u ON t.user_id = u.id WHERE t.id = "+id;
+        ResultSet rs = connector.statement.executeQuery(sql);
+        ArrayList<String> arrPhone = new ArrayList<>();
+//
+        while (rs.next()) {
+            arrPhone.add(rs.getString("telephone"));
+        }
+        return  arrPhone;
+    }
+
+
 }

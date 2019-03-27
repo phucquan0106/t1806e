@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class CtrlLogin {
     public TextField txtUsername;
@@ -69,7 +70,19 @@ public class CtrlLogin {
         }
         System.out.println("delete unsuccessful");
     }
-
+    public void getPhoneById() throws SQLException, IOException{
+        int id = Integer.valueOf(txtId.getText().trim());
+        ArrayList<String> arrPhone = new ArrayList<>();
+        arrPhone = new DAOUser().getPhoneById(id);
+        if(arrPhone.size() > 0){
+            System.out.println("Phone number of user id "+id+ ":");
+            for (String s: arrPhone) {
+                System.out.println(s);
+            }
+            return;
+        }
+        System.out.println("not found");
+    }
 //    @Override
 //    public void initialize(URL location, ResourceBundle resources) {
 //        lblTop.setText(Main.resourceBundle.getString("login_top"));
