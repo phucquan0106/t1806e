@@ -8,11 +8,11 @@
 <Pane fx:controller="DemoJavaFx.Controller.CtrlRegister" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="90.0" layoutY="85.0" prefHeight="56.0" prefWidth="189.0" text="User name:" />
-      <TextField fx:id="txtUsername" layoutX="90.0" layoutY="149.0" prefHeight="51.0" prefWidth="832.0" promptText="User name" />
+      <TextField fx:personId="txtUsername" layoutX="90.0" layoutY="149.0" prefHeight="51.0" prefWidth="832.0" promptText="User name" />
       <Text layoutX="482.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER" wrappingWidth="114.2734375" />
       <Label layoutX="90.0" layoutY="419.0" prefHeight="56.0" prefWidth="189.0" text="Pass word:" />
-      <PasswordField fx:id="txtPassword" layoutX="90.0" layoutY="501.0" prefHeight="51.0" prefWidth="832.0" promptText="password" />
-      <TextField fx:id="txtEmail" layoutX="91.0" layoutY="317.0" prefHeight="51.0" prefWidth="832.0" promptText="email" />
+      <PasswordField fx:personId="txtPassword" layoutX="90.0" layoutY="501.0" prefHeight="51.0" prefWidth="832.0" promptText="password" />
+      <TextField fx:personId="txtEmail" layoutX="91.0" layoutY="317.0" prefHeight="51.0" prefWidth="832.0" promptText="email" />
       <Label layoutX="91.0" layoutY="253.0" prefHeight="56.0" prefWidth="189.0" text="Email:" />
       <Button onAction="#registerAction" layoutX="90.0" layoutY="580.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="143.0" text="Register" />
       <Hyperlink onAction="#backToLogin" layoutX="90.0" layoutY="30.0" text="&lt;&lt; Back" />

@@ -4,11 +4,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TableView fx:controller="Assignment5ADF2.Controller" fx:id="tableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="715.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<TableView fx:controller="Assignment5ADF2.Controller" fx:personId="tableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="715.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
   <columns>
-    <TableColumn fx:id="id" prefWidth="85.0" text="ID" />
-    <TableColumn fx:id="username" prefWidth="152.0" text="User name" />
-      <TableColumn fx:id="email" prefWidth="349.0" text="Email" />
-      <TableColumn fx:id="status" prefWidth="111.0" text="Status" />
+    <TableColumn fx:personId="personId" prefWidth="85.0" text="ID" />
+    <TableColumn fx:personId="username" prefWidth="152.0" text="User name" />
+      <TableColumn fx:personId="email" prefWidth="349.0" text="Email" />
+      <TableColumn fx:personId="status" prefWidth="111.0" text="Status" />
   </columns>
 </TableView>
