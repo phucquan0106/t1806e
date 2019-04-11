@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="Assignment2XML.controller.weather" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="227.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather Application" wrappingWidth="225.2734375" />
+      <Text layoutX="68.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City: " wrappingWidth="77.1953125" />
+      <Text layoutX="68.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min:" wrappingWidth="68.1484375" />
+      <Text layoutX="68.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max: " />
+      <Text layoutX="68.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+      <Text fx:id="txtCity" layoutX="219.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="city" wrappingWidth="330.2734375" />
+      <Text fx:id="txtMin" layoutX="219.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="min" wrappingWidth="330.2734375" />
+      <Text fx:id="txtMax" layoutX="219.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="max" wrappingWidth="330.2734375" />
+      <Text fx:id="txtDes" layoutX="219.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="des" wrappingWidth="330.2734375" />
+   </children>
+</Pane>
